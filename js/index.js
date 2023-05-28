@@ -42,6 +42,23 @@ let cPass = document.getElementById('inputPasswordConfirm');
 let notMatch = document.getElementById('notMatch');
 notMatch.style.display = 'none'
 
+pass.addEventListener('click', function () {
+    if (email.value != 'admin@admin.com') {
+        email.style.border = '2px solid rgb(250, 54, 54)';
+        alert('Email is not Valid');
+    } else {
+        email.style.border = '1px solid #dee2e6';
+    }
+});
+cPass.addEventListener('click', function () {
+    if (pass.value != 123456 || pass.value != '123456') {
+        pass.style.border = '2px solid rgb(250, 54, 54)';
+        alert('Password is not Correct');
+    } else {
+        pass.style.border = '1px solid #dee2e6';
+    }
+})
+
 cPass.addEventListener('keyup', function () {
 
     if (email.value == 'admin@admin.com' && (pass.value == '123456' || pass.value == 123456) && (pass.value == cPass.value)) {
