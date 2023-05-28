@@ -45,7 +45,7 @@ notMatch.style.display = 'none'
 pass.addEventListener('click', function () {
     if (email.value != 'admin@admin.com') {
         email.style.border = '2px solid rgb(250, 54, 54)';
-        alert('Email is not Valid');
+        alert('Email is not Valid Or Empty');
     } else {
         email.style.border = '1px solid #dee2e6';
     }
@@ -53,7 +53,7 @@ pass.addEventListener('click', function () {
 cPass.addEventListener('click', function () {
     if (pass.value != 123456 || pass.value != '123456') {
         pass.style.border = '2px solid rgb(250, 54, 54)';
-        alert('Password is not Correct');
+        alert('Password is not Correct Or Empty');
     } else {
         pass.style.border = '1px solid #dee2e6';
     }
