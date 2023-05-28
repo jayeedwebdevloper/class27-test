@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Your Account</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="shadow-sm">
+        <nav class="navbar navbar-expand-lg border">
+            <div class="container">
+                <a class="navbar-brand fw-semibold" href="index.html">Online <span class="text-primary">Shop</span></a>
+                <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item pe-2">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link">Product</a>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="sidemenu" class="d-block d-lg-none">
+            <nav class="navbar bg-white fixed-top border">
+                <div class="container">
+                    <a class="navbar-brand fw-semibold" href="index.html">Online <span
+                            class="text-primary">Shop</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Online <span
+                                    class="text-primary">Shop</span></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">Product</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link">Contact</a></li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-primary" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="py-4">
+        <div class="container">
+            <h1 class="text-center text-secondary pt-5 pb-2">Login Your Account</h1>
+            <div class="row pb-5 justify-content-center align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="img/login.jpg" class="w-75" alt="login">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <form class="row g-3">
+                        <div class="col-12">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" placeholder="admin@admin.com" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputPassword" class="form-label">Password</label>
+                            <input type="password" placeholder="123456" class="form-control" id="inputPassword">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputPasswordConfirm" class="form-label">Confirm Password</label>
+                            <input type="password" placeholder="123456" class="form-control" id="inputPasswordConfirm">
+                        </div>
+                        <label for="warning" class="text-danger" id="notMatch">Password Is Not Match</label>
+                    </form>
+                    <div class="col-12 pt-4">
+                        <button type="submit" id="login" class="btn btn-primary disabled">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-body-tertiary pt-4 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <a href="index.html" class="text-decoration-none text-black">
+                        <h2>Online <span class="text-primary">Shop</span></h2>
+                        <p>Chose your best product from us, and you can get every thing with fast and secure delivery.
+                            stay with us and share your review</p>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4>Privacy</h4>
+                    <div class="d-flex flex-column">
+                        <a class="text-decoration-none text-secondary d-inline-block py-1" href="#">Not get your
+                            parcel</a>
+                        <a class="text-decoration-none text-secondary d-inline-block py-1" href="#">Product not good
+                            condition</a>
+                        <a class="text-decoration-none text-secondary d-inline-block py-1" href="#">Return</a>
+                        <a class="text-decoration-none text-secondary d-inline-block py-1" href="#">Emergency
+                            Contact</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4>Location</h4>
+                    <div class="d-flex flex-column">
+                        <a class="text-decoration-none text-secondary d-inline-block py-1" href="#">Bangladesh</a>
+                        <a class="text-decoration-none text-secondary d-inline-block py-1" href="#">Russia</a>
+                        <a class="text-decoration-none text-secondary d-inline-block py-1" href="#">USA</a>
+                        <a class="text-decoration-none text-secondary d-inline-block py-1" href="#">India</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4>Contact</h4>
+                    <div class="d-flex flex-column">
+                        <a class="text-decoration-none text-secondary d-inline-block py-1" href="#">Main Branch</a>
+                        <a class="text-decoration-none text-secondary d-inline-block py-1" href="#">Store Location</a>
+                        <a class="text-decoration-none text-secondary d-inline-block py-1" href="#">Manager</a>
+                        <a class="text-decoration-none text-secondary d-inline-block py-1" href="#">Courier Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
